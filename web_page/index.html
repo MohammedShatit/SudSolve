@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SudSolve</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar-container">
+            <h1>SudSolve</h1>
+        </nav>
+        <div class="content-container">
+            <div class="UI">
+                <div class="grid-container">
+                    <div class="grid">
+                        <!--table for the grid-->
+                        <table>
+                            <tr>
+                                <!--input boxes for each row with restriction of only numbers and one digit input-->
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box1"</td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box2"></td>
+                                <td class="tile"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box3"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box4"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box5"></td>
+                                <td class="tile"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box6"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box7"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box8"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box9"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box10"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box11"></td>
+                                <td class="tile"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box12"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box13"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box14"></td>
+                                <td class="tile"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box15"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box16"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box17"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box18"></td>
+                            </tr>
+                            <tr>
+                                <td class="row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box19"></td>
+                                <td class="row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box20"></td>
+                                <td class="tile-row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box21"></td>
+                                <td class="row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box22"></td>
+                                <td class="row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box23"></td>
+                                <td class="tile-row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box24"></td>
+                                <td class="row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box25"></td>
+                                <td class="row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box26"></td>
+                                <td class="row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box27"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box28"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box29"></td>
+                                <td class="tile"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box30"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box31"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box32"></td>
+                                <td class="tile"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box33"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box34"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box35"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box36"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box37"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box38"></td>
+                                <td class="tile"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box39"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box40"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box41"></td>
+                                <td class="tile"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box42"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box43"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box44"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box45"></td>
+                            </tr>
+                            <tr>
+                                <td class="row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box46"></td>
+                                <td class="row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box47"></td>
+                                <td class="tile-row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box48"></td>
+                                <td class="row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box49"></td>
+                                <td class="row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box50"></td>
+                                <td class="tile-row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box51"></td>
+                                <td class="row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box52"></td>
+                                <td class="row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box53"></td>
+                                <td class="row"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box54"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box55"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box56"></td>
+                                <td class="tile"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box57"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box58"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box59"></td>
+                                <td class="tile"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box60"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box61"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box62"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box63"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box64"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box65"></td>
+                                <td class="tile"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box66"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box67"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box68"></td>
+                                <td class="tile"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box69"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box70"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box71"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box72"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box73"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box74"></td>
+                                <td class="tile"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box75"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box76"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box77"></td>
+                                <td class="tile"><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box78"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box79"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box80"></td>
+                                <td><input type="text" maxlength="1" onkeypress="return /[1-9]/i.test(event.key)" class="input-box" id="box81"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="options-container"> <!--Options container for choosing tabs and buttons-->
+                    <ul class="tabs">
+                        <li data-tab-target="#solve-tab" class="active-tab tab">Solve</li>
+                        <li data-tab-target="#play-tab" class="tab">Play</li>
+                    </ul>
+                    <div id="solve-tab" data-tab-content class="active-tab">
+                        <div class="status">
+                            <h3 id="status">Enter a sudoku grid to solve!</h3>
+                        </div>
+                        <div class="exeTime">
+                            <h3 id="timer"></h3>
+                        </div>
+                        <div class="buttons">
+                            <div class="top-btn">
+                                <button class="button" id="solve-btn">Solve</button>
+                                <button class="button" id="check-btn">Check</button>
+                            </div>
+                        </br>
+                            <div class="bottom-btn">
+                                <button class="button" id="reset-btn">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="play-tab" data-tab-content>
+                        <div class="difficulty">
+                            <div class="choose-difficulty">
+                                <h3 id="choose-difficulty">Choose grid difficulty: </h3>
+                            </div>
+                            <div class="radio-btns">
+                                <div class="easy">
+                                    <input type="radio" name="diffculty" id="easy" checked>
+                                    <label for="easy">Easy</label>
+                                </div>
+                                <div class="medium">
+                                    <input type="radio" name="diffculty" id="medium">
+                                    <label for="medium">Medium</label>
+                                </div>
+                                <div class="hard">
+                                    <input type="radio" name="diffculty" id="hard">
+                                    <label for="hard">Hard</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="play-btn">
+                            <button class="button" id="generate-btn">Generate</button>
+                            <button class="button" id="checkPlay-btn">Check Solution</button>
+                        </div>
+                        <div class="countdown">
+                            <h3 id="countdown-label">Time remaining: </h3><p id="countdown"></p>
+                        </div>
+                        <h3 id="validity"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/algorithm/solver.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
